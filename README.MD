@@ -15,4 +15,4 @@ el usuario es afortunado si la diferencia (afortunado-no_afortunado) es **positi
 * Se separa el bucle **while** del bloque condicional **if-else**
 * Se define de manera correcta la obtendión de la variable **digito**
 * Se usan nombres más descriptivos en las variables.
-
+* Se optimiza el código al reducir el número de variables en uso y las condiciones.

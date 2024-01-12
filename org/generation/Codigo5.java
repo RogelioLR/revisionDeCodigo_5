@@ -15,23 +15,22 @@ public class Codigo5 {
 			scanner.close();
 			
 			int afortunado = 0;
-			int noAfortunado = 0;
 			int numeroIntroducido = numero;
 			
 			// Separamos el bucle While del bloque condicional IF
 			while (numeroIntroducido > 0) {
 				int digit = numeroIntroducido % 10;
 				// Se compara digit con alguno de los siguientes valores según la condición.
-				if (digit == 3 || digit == 7 || digit == 8 || digit == 9) {
+				if (digit == 3 || digit > 6) {
 					afortunado++;
 				} else {
-					noAfortunado++;
+					afortunado--;
 				}
 				numeroIntroducido /= 10;
 			}
 
 			// Se comparan las coincidencias de afortunado contra noAfortunado.
-			if (afortunado > noAfortunado) {
+			if (afortunado > 0) {
 				System.out.println("El " + numero + " es un número afortunado.");
 			} else {
 				System.out.println("El " + numero + " no es un número afortunado.");
